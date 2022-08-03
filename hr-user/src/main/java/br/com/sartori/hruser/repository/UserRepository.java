@@ -1,8 +1,8 @@
-package br.com.sartori.hruser.repositories;
+package br.com.sartori.hruser.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import br.com.sartori.hruser.entities.User;
+import br.com.sartori.hruser.model.User;
 
 public interface UserRepository extends JpaRepository<User, Long> {
 	

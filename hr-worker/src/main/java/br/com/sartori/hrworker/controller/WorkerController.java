@@ -1,4 +1,4 @@
-package br.com.sartori.hrworker.resources;
+package br.com.sartori.hrworker.controller;
 
 import java.util.List;
 
@@ -14,16 +14,16 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.sartori.hrworker.entities.Worker;
-import br.com.sartori.hrworker.repositories.WorkerRepository;
+import br.com.sartori.hrworker.model.Worker;
+import br.com.sartori.hrworker.repository.WorkerRepository;
 
 
 @RefreshScope
 @RestController
 @RequestMapping(value = "/workers")
-public class WorkerResource {
+public class WorkerController {
 	
-	private static Logger logger = LoggerFactory.getLogger(WorkerResource.class);
+	private static Logger logger = LoggerFactory.getLogger(WorkerController.class);
 	
 	@Value("${test.config}")
 	private String testConfig;

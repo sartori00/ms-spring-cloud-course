@@ -1,4 +1,4 @@
-package br.com.sartori.hrpayroll.entities;
+package br.com.sartori.hroauth.model;
 
 import java.io.Serializable;
 
@@ -7,18 +7,12 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class Worker implements Serializable{
-	
+public class Role implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
-
 	private Long id;
+	private String roleName;
 	
-	private String  name;
-	
-	private Double dailyIncome;
-	
-	public Worker() {}
-	
+	public Role() {}
 
 }

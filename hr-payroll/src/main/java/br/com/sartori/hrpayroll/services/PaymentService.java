@@ -3,9 +3,9 @@ package br.com.sartori.hrpayroll.services;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import br.com.sartori.hrpayroll.entities.Payment;
-import br.com.sartori.hrpayroll.entities.Worker;
 import br.com.sartori.hrpayroll.feignclients.WorkerFeignClient;
+import br.com.sartori.hrpayroll.model.Payment;
+import br.com.sartori.hrpayroll.model.Worker;
 
 @Service
 public class PaymentService {

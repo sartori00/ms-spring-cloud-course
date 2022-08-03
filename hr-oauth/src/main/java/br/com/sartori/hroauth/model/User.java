@@ -1,4 +1,4 @@
-package br.com.sartori.hroauth.entities;
+package br.com.sartori.hroauth.model;
 
 import java.io.Serializable;
 import java.util.Collection;

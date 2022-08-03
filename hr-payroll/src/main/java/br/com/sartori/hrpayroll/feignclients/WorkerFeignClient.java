@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-import br.com.sartori.hrpayroll.entities.Worker;
+import br.com.sartori.hrpayroll.model.Worker;
 
 
 @Component

@@ -1,4 +1,4 @@
-package br.com.sartori.hruser.entities;
+package br.com.sartori.hruser.model;
 
 import java.io.Serializable;
 

@@ -1,4 +1,4 @@
-package br.com.sartori.hrpayroll.resources;
+package br.com.sartori.hrpayroll.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 
-import br.com.sartori.hrpayroll.entities.Payment;
+import br.com.sartori.hrpayroll.model.Payment;
 import br.com.sartori.hrpayroll.services.PaymentService;
 
 @RestController
 @RequestMapping("/payments")
-public class PaymentResouces {
+public class PaymentController {
 	
 	@Autowired
 	private PaymentService service;

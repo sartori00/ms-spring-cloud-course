@@ -8,8 +8,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import br.com.sartori.hroauth.entities.User;
 import br.com.sartori.hroauth.feignclients.UserFeignClient;
+import br.com.sartori.hroauth.model.User;
 
 @Service
 public class UserService implements UserDetailsService{
