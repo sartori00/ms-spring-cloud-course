@@ -25,7 +25,7 @@ public class WorkerController {
 	
 	private static Logger logger = LoggerFactory.getLogger(WorkerController.class);
 	
-	@Value("${test.config}")
+	//@Value("${test.config}")
 	private String testConfig;
 	
 	@Autowired
@@ -47,7 +47,7 @@ public class WorkerController {
 	
 	@GetMapping(value = "/{id}")
 	public ResponseEntity<Worker> findById(@PathVariable Long id){
-		logger.info("PORT = " + env.getProperty("local.server.port"));
+		//logger.info("PORT = " + env.getProperty("local.server.port"));
 		return ResponseEntity.ok(repository.findById(id).get());
 	}
 
